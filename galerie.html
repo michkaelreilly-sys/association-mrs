@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Galerie Association MRS</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Photos des conférences, rencontres et actions sociales de l'association MRS.">
+<meta property="og:title" content="Galerie Association MRS">
+<meta property="og:description" content="Photos des conférences, rencontres et actions sociales de l'association MRS.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/photos/discours-enfants-fresque.jpg">
+<meta name="theme-color" content="#0E2A47">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Gelasio:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+<header class="entete">
+  <div class="wrap">
+    <a class="marque" href="index.html">
+      <img src="images/logo-blanc.png" alt="" width="52" height="53">
+      <span>Association MRS<small>Motivation • Redevabilité • Succès</small></span>
+    </a>
+    <button class="bouton-menu" type="button" aria-expanded="false" aria-controls="nav-principale">Menu</button>
+    <nav id="nav-principale" class="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html#association">L'association</a></li>
+        <li><a href="index.html#motivational-speech">Motivational Speech</a></li>
+        <li><a href="index.html#actions">Actions sociales</a></li>
+        <li><a href="galerie.html" aria-current="page">Galerie</a></li>
+        <li><a href="index.html#soutenir">Nous soutenir</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="nav-evenement"><a href="lyon-2026.html">Lyon 2026</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+
+<section class="page-titre" aria-labelledby="titre-galerie">
+  <div class="wrap">
+    <h1 id="titre-galerie">Galerie</h1>
+    <p>Conférences, rencontres et actions sociales de l'association MRS, à Madagascar et ailleurs.</p>
+  </div>
+</section>
+<section class="bande" style="padding-top:2.5rem" aria-label="Photos">
+  <div class="wrap">
+    <div class="filtres" role="group" aria-label="Filtrer les photos">
+      <button type="button" data-filtre="tout" aria-pressed="true">Toutes les photos</button>
+      <button type="button" data-filtre="conferences" aria-pressed="false">Conférences et rencontres</button>
+      <button type="button" data-filtre="social" aria-pressed="false">Actions sociales</button>
+    </div>
+    <div class="galerie" data-galerie></div>
+  </div>
+</section>
+<dialog class="visionneuse" aria-label="Photo agrandie">
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+  <div class="commandes">
+    <button type="button" data-action="prec">Précédente</button>
+    <button type="button" data-action="fermer">Fermer</button>
+    <button type="button" data-action="suiv">Suivante</button>
+  </div>
+</dialog>
+</main>
+<footer class="pied">
+  <div class="wrap">
+    <img src="images/logo-blanc.png" alt="Logo de l'association MRS" width="76" height="77">
+    <div>
+      <p><strong style="color:#fff">Association MRS</strong> · Motivation, Redevabilité, Succès</p>
+      <nav aria-label="Liens du pied de page">
+        <ul>
+          <li><a href="index.html#association">L'association</a></li>
+          <li><a href="lyon-2026.html">Lyon 2026</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <div class="reseaux" data-reseaux></div>
+      <p>© <span data-annee>2026</span> Association MRS</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/galerie.js"></script>
+</body>
+</html>
